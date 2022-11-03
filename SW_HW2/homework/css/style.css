@@ -1,0 +1,198 @@
+/* ***************** 1 ******** */
+ @media print {
+    .tm-sidebar { display: none; }
+    #about {display: none;}
+    .blocks{display: none;}
+    .ideas {display: none;}
+    .tm-content-box {display: none;}
+    .tm-main-content > section:first-of-type > .tm-content-box:before {display: none;}
+
+    .tm-content-header {
+        display: flex;
+        flex-direction: column;
+        padding-left:100px ;
+        padding-right: 50px;
+        margin: 0;
+    }
+
+    .tm-team-description-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 150px ;
+        padding-right: 75px;
+    }
+
+    h2.tm-section-title {
+        color: blue ;
+    }
+
+    .flex-2-col {
+       display: flex;
+       align-items: center;
+    }
+
+    .flex-item +div  {
+        width: 25%;
+        margin-left: -50px;
+    }
+ 
+     .tm-footer {
+        margin-top: -20px;
+        padding-left: 75px;
+    }
+
+    .text-xs-center:first-letter {
+        color: #87CEFA;
+        font-size: 30px;
+    }
+}  
+
+.flex-2-col {
+    display: flex;
+    align-items: center;
+}
+
+.tm-main-content > section:first-of-type > .tm-content-box {
+    position: relative;
+}
+
+.tm-main-content > section:first-of-type > .tm-content-box:before {
+    top: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 30px solid lightskyblue;
+    border-right: 200px solid transparent;
+    position: absolute;
+}
+
+/* ************************************************** */
+
+ .box-bg:hover {
+    background-color: #87CEFA;
+}
+
+.tm-section-title-box:hover {
+    color: aliceblue;
+    font-weight: bold;
+} 
+
+/* ************** 2 ******************** */
+
+ .tm-banner-text:first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+}
+
+/* ******************* 3 ******************** */
+
+ .tm-section-description:first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+}  
+
+/* ****************** 4 ******************** */
+
+ .tm-main-nav {
+    flex-direction: column;
+    box-shadow:         0px 0px 5px 3px gray;
+}
+
+.tm-content-box {
+    box-shadow:         0px 0px 10px 2px gray;
+}
+
+.tm-banner  {
+    background-color: rgba(200, 200, 200, .3);
+} 
+
+.tm-banner-inner {
+    background-color: #ffffff;
+}
+
+/* ************************** 5 **************** */
+
+ div[class~='carousel-content']  {
+    color: gainsboro;
+    letter-spacing: 5px;
+} 
+ 
+ .tm-section-title +p {
+    font-style: italic;
+}
+
+.tm-section-description {
+    text-indent: 1.5em;
+    line-height: 1.5;
+}
+
+/* *********************** 8 ******************** */
+
+a:visited {
+    text-decoration: underline;
+}
+
+.heading.tm-content-box a:hover {
+    color: #87CEFA;
+    font-weight: bold;
+    border-bottom: 1px solid #87CEFA;
+}
+
+.heading.tm-content-box a {
+    color: black ;
+}
+
+.text::after {
+    content: 'New';
+    position: absolute;
+    color: red;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* *********************** 9 **************** */
+
+.box-work {
+    padding: 5px;
+}
+
+.box-work:nth-child(even) {
+    background-color: rgba(200, 200, 200, .3);
+}
+
+.box.box-work p { 
+    font-style: italic; 
+}
+
+.box.box-work p:first-letter {
+    font-size: 25px;
+}
+
+/* ************************* 10 ************************* */
+
+.btn.btn-primary.submit-btn {
+    border-radius: 0;
+    font-weight: 300 ;
+    border-color: #87CEFA;
+    color: #87CEFA;
+    background-color: #ffffff;
+    float: right;
+}
+
+.btn.btn-primary.submit-btn:hover {
+    background-color: #87CEFA;
+    color:#ffffff ;
+    opacity: .7;
+}
+
+.mandatory-field::after {
+    content: '*';
+    color: red;
+}
+
+.tm-nav-item:hover {
+    background-color:  rgba(200, 200, 200, .3);
+}

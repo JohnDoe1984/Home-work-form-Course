@@ -1,0 +1,88 @@
+@mixin defaultColor {
+    color: #1c2240;
+}
+
+@mixin colorFooter {
+    color: #cec8c8;
+}
+
+header {
+    background-image: url('../img/m-h-day.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 0% 0% 50% 0%;
+}
+
+.landing-logo {
+    @include defaultColor()
+}
+
+.header_heading {
+    @include defaultColor()
+}
+
+.header_text {
+    @include defaultColor()
+}
+
+.header_button {
+    color: #ffffff;
+    background-color: #628d37;
+    border-radius: 10%;
+    border-color: #628d37;
+}
+
+.login {
+    color: #ffffff;
+    font-size: large;
+}
+
+.section_text {
+    @include defaultColor()
+}
+
+.section_card {
+    background-color: #222430;
+    border-radius: 5px;
+}
+
+.section_card_heading {
+    color: #ffffff;
+}
+
+.section_card_text {
+    color: rgb(185, 189, 192);
+}
+
+.section_link {
+    color: rgb(185, 189, 192);
+}
+
+.section_banner {
+    background: linear-gradient(to right, #009900 0%, #0033cc 99%);
+}
+
+.section_banner_heading {
+    @include defaultColor()
+}
+
+.section_banner_button {
+    color: #ffffff;
+    background-color: #628d37;
+    border-radius: 10%;
+    border-color: #628d37;
+}
+
+.section_banner_text {
+    @include colorFooter()
+}
+
+.footer {
+    background-color: #222430;
+    @include colorFooter()
+}
+
+.footer_logo {
+    @include colorFooter()
+}
